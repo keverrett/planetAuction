@@ -4,7 +4,7 @@ import { Navbar, Nav, Container } from 'react-bootstrap';
 const Header = () => {
     return (
         <header>
-            <Navbar expand="lg" variant='dark' collapseOnSelecto>
+            <Navbar expand="lg" variant='dark' collapseOnSelect>
                 <Container>
                     <Navbar.Brand>Planet Auction</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
