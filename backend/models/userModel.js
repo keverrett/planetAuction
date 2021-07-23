@@ -1,18 +1,18 @@
 import mongoose from 'mongoose'
-import { string } from '../../frontend/node_modules/@types/prop-types'
+
 
 const userSchema = mongoose.Schema({
     name: {
-        type: string,
+        type: String,
         required: true
     },
     email: {
-        type: string,
+        type: String,
         required: true,
         unique: true
     },
     password: {
-        type: string,
+        type: String,
         required: true
     },
     isAdmin: {

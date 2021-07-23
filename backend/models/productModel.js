@@ -1,5 +1,5 @@
 import mongoose from 'mongoose'
-import { string } from '../../frontend/node_modules/@types/prop-types'
+
 
 const reviewSchema = mongoose.Schema({
     name: { type: String, required: true },
@@ -16,16 +16,16 @@ const productSchema = mongoose.Schema({
         required: true 
     },
     name: {
-        type: string,
+        type: String,
         required: true
     },
     image: {
-        type: string,
+        type: String,
         required: true,
        
     },
     brand: {
-        type: string,
+        type: String,
         required: true
     },
     category: {
@@ -34,17 +34,17 @@ const productSchema = mongoose.Schema({
         default: false
     },
     description: {
-        type: string,
+        type: String,
         required: true
     },
     rating: {
-        type: string,
+        type: String,
         required: true,
         default: 0
     },
     reviews: [reviewSchema],
     category: {
-        type: string,
+        type: String,
         required: true
     },
     numReviews: {
@@ -53,7 +53,7 @@ const productSchema = mongoose.Schema({
         default: 0
     },
     price: {
-        type: string,
+        type: String,
         required: true
     },
     countInStock: {
@@ -67,4 +67,4 @@ const productSchema = mongoose.Schema({
 
 const User = mongoose.model('Product', productSchema)
 
-export default Product
+export default productSchema

@@ -1,12 +1,11 @@
-import React, {useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import { Row, Col, Image, ListGroup, Card, Button } from 'react-bootstrap'
 import Rating from '../components/Rating'
 import axios from 'axios'
-import {Link} from 'react-router-bootstrap'
-import {LinkContainer} from 'react-router-bootstrap'
+import { LinkContainer } from 'react-router-bootstrap'
 
 
-const ProductSceen = ({match}) => {
+const ProductSceen = ({ match }) => {
     const [product, setProduct] = useState({})
 
     useEffect(() => {

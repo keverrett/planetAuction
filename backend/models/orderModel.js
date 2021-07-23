@@ -1,9 +1,9 @@
 import mongoose from 'mongoose'
-import { string } from '../../frontend/node_modules/@types/prop-types'
+
 
 const orderSchema = mongoose.Schema({
     User: {
-        type: mongooose.Schema.Types.ObjectId,
+        type: mongoose.Schema.Types.ObjectId,
         required: true,
         red: 'User'
     },
